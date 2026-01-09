@@ -1,0 +1,9 @@
+def validasi (nilai_str) :
+    try:
+        nilai = float(nilai_str)
+        if 0 <= nilai <= 100:
+            return nilai
+        else:
+            raise ValueError("Nilai harus 0-100!")
+    except:
+        raise ValueError("Input harus angka!")
