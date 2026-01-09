@@ -1,0 +1,8 @@
+if data_mahasiswa:
+        tampilan.cetak_tabel(data_mahasiswa, nilai_akhir, grades)
+    else:
+        print("\nTidak ada data.")
+
+
+if __name__ == "__main__":
+    main()
