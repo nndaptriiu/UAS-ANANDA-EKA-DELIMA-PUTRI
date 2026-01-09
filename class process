@@ -1,0 +1,15 @@
+class Proses:
+    def hitung_akhir(self, mhs):
+        return (mhs.tugas * 0.3) + (mhs.uts * 0.35) + (mhs.uas * 0.35)
+    
+    def hitung_grade(self, nilai):
+        if nilai >= 85:
+            return "A"
+        elif nilai >= 70:
+            return "B"
+        elif nilai >= 60:
+            return "C"
+        elif nilai >= 50:
+            return "D"
+        else:
+            return "E"
