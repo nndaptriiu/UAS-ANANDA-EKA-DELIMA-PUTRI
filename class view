@@ -1,0 +1,8 @@
+class Tampilan:
+    def cetak_tabel(self, data_mahasiswa, nilai_akhir, grades):
+        print("\n" + "="*80)
+        print(f"{'NIM':<10} {'NAMA':<15} {'TUGAS':<8} {'UTS':<8} {'UAS':<8} {'AKHIR':<8} {'GRADE':<6}")
+        print("="*80)
+        for i, mhs in enumerate(data_mahasiswa):
+            print(f"{mhs.nim:<10} {mhs.nama:<15} {mhs.tugas:<8} {mhs.uts:<8} {mhs.uas:<8} {nilai_akhir[i]:<8.2f} {grades[i]:<6}")
+        print("="*80)
